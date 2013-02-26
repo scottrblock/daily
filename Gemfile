@@ -7,6 +7,7 @@ gem 'rails', '3.2.8'
 
 gem 'pg'
 gem 'thin-rails'
+gem 'annotate', '~> 2.4.1.beta'
 
 
 # Gems used only for assets and not required

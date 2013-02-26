@@ -1,0 +1,17 @@
+<%= form_for(@activity_set) do |f| %>
+  <% if @activity_set.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@activity_set.errors.count, "error") %> prohibited this activity_set from being saved:</h2>
+
+      <ul>
+      <% @activity_set.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

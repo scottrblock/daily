@@ -1,4 +1,8 @@
 Daily::Application.routes.draw do
+  resources :activity_sets
+
+  resources :activities
+
   devise_for :users
 
   # The priority is based upon order of creation:
