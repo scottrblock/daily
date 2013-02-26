@@ -27,7 +27,10 @@ end
 
 gem 'haml'
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-twitter'
 gem 'jquery-rails'
+gem "d3-rails"
 
 
 
