@@ -1,4 +1,7 @@
 @import "compass/css3";
+@import "bootstrap_over_ride"; 
 @import "twitter/bootstrap-no-sprites";
 @import "twitter/bootstrap/responsive";
 @import "font-awesome";
+
+body { padding-top: 60px; }

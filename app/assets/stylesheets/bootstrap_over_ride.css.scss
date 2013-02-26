@@ -1,0 +1,76 @@
+// Grays
+// -------------------------
+$black:                 #000;
+$grayDarker:            #222;
+$grayDark:              #333;
+$gray:                  #555;
+$grayLight:             #999;
+$grayLighter:           #eee;
+$white:                 #fff;
+
+// Accent colors
+// -------------------------
+$blue:                  #049cdb;
+$blueDark:              #0064cd;
+$green:                 #46a546;
+$red:                   #9d261d;
+$yellow:                #ffc40d;
+$orange:                #f89406;
+$pink:                  #c3325f;
+$purple:                #7a43b6;
+
+
+// Scaffolding
+// -------------------------
+$bodyBackground:        $grayLighter;
+$textColor:             $grayDarker;
+
+// Links
+// -------------------------
+$linkColor:             #08c;
+$linkColorHover:        darken($linkColor, 15%);
+
+
+// Typography
+// -------------------------
+$sansFontFamily:        "Open Sans", Verdana, Helvetica, sans-serif;
+$serifFontFamily:       "Bree Serif", Georgia, serif;
+$monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
+
+$baseFontSize:          14px;
+$baseFontFamily:        $sansFontFamily;
+$baseLineHeight:        20px;
+$altFontFamily:         $serifFontFamily;
+
+$headingsFontFamily:    $serifFontFamily; // empty to use BS default, $baseFontFamily
+$headingsFontWeight:    bold;    // instead of browser default, bold
+$headingsColor:         inherit; // empty to use BS default, $textColor
+
+// Buttons
+// -------------------------
+$btnBackground:                     $white;
+$btnBackgroundHighlight:            darken($white, 10%);
+$btnBorder:                         #ccc;
+
+$btnPrimaryBackground:              $linkColor;
+$btnPrimaryBackgroundHighlight:     saturate($btnPrimaryBackground, 20%);
+
+$btnInfoBackground:                 #5bc0de;
+$btnInfoBackgroundHighlight:        #2f96b4;
+
+$btnSuccessBackground:              #62c462;
+$btnSuccessBackgroundHighlight:     #51a351;
+
+$btnWarningBackground:              lighten($orange, 15%);
+$btnWarningBackgroundHighlight:     $orange;
+
+$btnDangerBackground:               #ee5f5b;
+$btnDangerBackgroundHighlight:      #bd362f;
+
+
+//Nav
+$navbarBackground: $gray;
+$navbarBackgroundHighlight: $grayLight;
+$navbarText: $grayLighter;
+$navbarLinkColor: $grayLighter;
+$navbarLinkColorHover:  $white;

@@ -2,14 +2,21 @@
 %html
   %head
     %title Daily
+    %link{:href => "http://fonts.googleapis.com/css?family=Bree+Serif", :rel =>"stylesheet", :type =>"text/css"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans", :rel =>"stylesheet", :type =>"text/css"}
 
     = stylesheet_link_tag    "application", :media => "all"
-    = javascript_include_tag "application"
     = csrf_meta_tags
   %body
     = render "shared/header"
     = yield :precontainer # Yields content intended to be outside the main container
     .container
+      - flash.each do |name, msg|
+        .alert{:class => "alert#{name == :notice ? 'success' : 'error'}"}
+          %a.close{:data => {:dismiss => "alert"}}
+            x
+          = msg
       = yield
     = yield :postcontainer # Yields content intended to be outside the main container after
     = render "shared/footer"
+    = javascript_include_tag "application"
