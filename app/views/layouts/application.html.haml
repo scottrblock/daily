@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title Daily
+
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    = render "shared/header"
+    = yield :precontainer # Yields content intended to be outside the main container
+    .container
+      = yield
+    = yield :postcontainer # Yields content intended to be outside the main container after
+    = render "shared/footer"
