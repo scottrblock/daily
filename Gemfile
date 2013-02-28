@@ -26,6 +26,8 @@ group :assets do
 end
 
 gem 'haml'
+gem 'hpricot'
+gem 'ruby_parser'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-twitter'

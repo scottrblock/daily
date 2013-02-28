@@ -41,6 +41,9 @@ class ActivitySetsController < ApplicationController
   # POST /activity_sets.json
   def create
     @activity_set = ActivitySet.new(params[:activity_set])
+    @activity_set
+    
+    @activity_set.user_id = current_user.id if current_user
 
     respond_to do |format|
       if @activity_set.save

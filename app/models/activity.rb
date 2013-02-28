@@ -1,5 +1,5 @@
 class Activity < ActiveRecord::Base
-  attr_accessible :did, :name, :activity_set_id
+  attr_accessible :did, :name, :activity_set_id, :id
 
   belongs_to :activity_set
 end
@@ -13,5 +13,6 @@ end
 #  created_at      :datetime        not null
 #  updated_at      :datetime        not null
 #  activity_set_id :integer
+#  answer          :text
 #
 

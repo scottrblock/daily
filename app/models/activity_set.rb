@@ -1,5 +1,5 @@
 class ActivitySet < ActiveRecord::Base
-  attr_accessible :title, :body, :user_id
+  attr_accessible :name, :id, :user_id, :activities
 
   has_many :activities, :inverse_of => :activity_set
   belongs_to :user
@@ -12,5 +12,6 @@ end
 #  created_at :datetime        not null
 #  updated_at :datetime        not null
 #  user_id    :integer
+#  name       :string(255)
 #
 

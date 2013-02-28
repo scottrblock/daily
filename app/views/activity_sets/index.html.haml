@@ -1,0 +1,13 @@
+%h1 Listing activity_sets
+%table
+  %tr
+    %th
+    %th
+    %th
+  - @activity_sets.each do |activity_set|
+    %tr
+      %td= link_to 'Show', activity_set
+      %td= link_to 'Edit', edit_activity_set_path(activity_set)
+      %td= link_to 'Destroy', activity_set, method: :delete, data: { confirm: 'Are you sure?' }
+%br/
+= link_to 'New Activity set', new_activity_set_path
