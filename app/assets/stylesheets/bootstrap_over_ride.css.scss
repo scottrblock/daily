@@ -1,3 +1,11 @@
+/*
+  Custom colors from http://www.colourlovers.com/palette/2719643/Need_and_Deserve
+  $blue, $blueDark, $teal, $tan, $tanDark
+
+*/
+
+
+
 // Grays
 // -------------------------
 $black:                 #000;
@@ -10,24 +18,28 @@ $white:                 #fff;
 
 // Accent colors
 // -------------------------
-$blue:                  #049cdb;
-$blueDark:              #0064cd;
+$blue:                  #159CB2;
+$blueDark:              #16677A;
+$teal:                  #83C1B6;
 $green:                 #46a546;
 $red:                   #9d261d;
 $yellow:                #ffc40d;
 $orange:                #f89406;
 $pink:                  #c3325f;
 $purple:                #7a43b6;
+$tan:                   #F3E1D3;
+$tanDark:               #F3D6B4;
+
 
 
 // Scaffolding
 // -------------------------
-$bodyBackground:        $grayLighter;
-$textColor:             $grayDarker;
+$bodyBackground:        $tan;
+$textColor:             $grayDark;
 
 // Links
 // -------------------------
-$linkColor:             #08c;
+$linkColor:             $blueDark;
 $linkColorHover:        darken($linkColor, 15%);
 
 
@@ -44,7 +56,7 @@ $altFontFamily:         $serifFontFamily;
 
 $headingsFontFamily:    $serifFontFamily; // empty to use BS default, $baseFontFamily
 $headingsFontWeight:    bold;    // instead of browser default, bold
-$headingsColor:         inherit; // empty to use BS default, $textColor
+$headingsColor:         $blue;
 
 // Buttons
 // -------------------------
@@ -69,8 +81,8 @@ $btnDangerBackgroundHighlight:      #bd362f;
 
 
 //Nav
-$navbarBackground: $gray;
-$navbarBackgroundHighlight: $grayLight;
-$navbarText: $grayLighter;
-$navbarLinkColor: $grayLighter;
-$navbarLinkColorHover:  $white;
+$navbarBackground: $tanDark;
+$navbarBackgroundHighlight: $tanDark;
+$navbarText: $teal;
+$navbarLinkColor: $linkColor;
+$navbarLinkColorHover:  $linkColorHover;

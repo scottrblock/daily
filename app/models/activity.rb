@@ -9,10 +9,8 @@ end
 #
 #  id              :integer         not null, primary key
 #  name            :string(255)
-#  did             :boolean
 #  created_at      :datetime        not null
 #  updated_at      :datetime        not null
 #  activity_set_id :integer
-#  answer          :text
 #
 

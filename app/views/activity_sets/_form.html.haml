@@ -7,5 +7,12 @@
       %ul
         - @activity_set.errors.full_messages.each do |msg|
           %li= msg
+  - for activity in Activity.find(:all)
+    %div.clearfix.switch-wrap
+      .switch{:data => {:on => "success", :off => "danger", :on_label => "yes", :off_label => "no"}}
+        = check_box_tag "activity_set[activity_ids][]", activity.id, @activity_set.activities.include?(activity)
+      %h4.switch-label
+        Today I
+        = activity.name + "."
   .actions
-    = f.submit
+    = f.submit "Record"

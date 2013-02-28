@@ -1,5 +1,5 @@
 class ActivitySet < ActiveRecord::Base
-  attr_accessible :name, :id, :user_id, :activities
+  attr_accessible :name, :id, :user_id, :activities, :activity_ids
 
   has_many :activities, :inverse_of => :activity_set
   belongs_to :user
