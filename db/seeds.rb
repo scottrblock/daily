@@ -1,3 +1,3 @@
 ["Read", "Wrote", "Coded", "Laughed", "Learned"].each do |a|
-  Activity.create(:name => a, :did => false)
+  Activity.create(:name => a)
 end
